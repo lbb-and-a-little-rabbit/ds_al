@@ -72,12 +72,6 @@ public:
         siftDown(0,arr.size());
         return root;
     }
-
-    void deleteIdx(int idx){
-        arr[idx]=INT_MAX;
-        siftUp(idx);
-        extractMax();
-    }
 };
 
     void Heapsort(vector<int> &nums){
