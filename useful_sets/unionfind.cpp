@@ -20,9 +20,9 @@ public:
             return x;
         }
         if(parent[x]!=x){
-            return find(parent[x]);
+            parent[x]=find(parent[x]);
         }
-        return x;
+        return parent[x];
     }
 
     void unite(int a,int b){
